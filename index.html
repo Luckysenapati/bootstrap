@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="C:\Users\LUCKY SENAPATI\Desktop\practice\Assignment 4\bootstrap-5.2.3-dist\css\bootstrap.min.css"
+    />
+    <script src="C:\Users\LUCKY SENAPATI\Desktop\practice\Assignment 4\bootstrap-5.2.3-dist\js\bootstrap.min.js"></script>
+
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0 0;
+        padding: 0 0;
+        box-sizing: border-box;
+      }
+
+      .bi {
+        stroke: aliceblue;
+      }
+
+      /* .vertical-scrollable {
+            position: absolute;
+            top: 56px;
+            bottom: 100px;
+            left: auto;
+            width: 15%;
+            overflow-y: scroll;
+            background-color: rgb(184, 179, 179);
+        } */
+
+      .overflow-auto {
+        height: 800px;
+      }
+
+      .container1 {
+        display: grid;
+        grid-template-columns: 1fr 4.5fr;
+        margin-left: 0;
+      }
+
+      .mbtn {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+
+      .main {
+        margin-top: 70px;
+      }
+
+      .top {
+        margin-left: 25px;
+        border-bottom: 1px solid rgb(189, 187, 187);
+        padding-bottom: 24px;
+      }
+
+      .mid {
+        margin-top: 24px;
+        margin-left: 25px;
+        padding-bottom: 24px;
+      }
+
+      .jumbotron {
+        margin-top: 24px;
+        margin-left: 25px;
+        background-color: rgb(206, 206, 206);
+        padding: 80px 38px;
+        border-radius: 5px;
+      }
+
+      .hover:hover {
+        background-color: rgb(23, 156, 23);
+        color: #fff;
+      }
+
+      .icon {
+        stroke: #fff;
+        fill: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="bg-outline-light" href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              class="icon"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.03 2.59a1.5 1.5 0 011.94 0l7.5 6.363a1.5 1.5 0 01.53 1.144V19.5a1.5 1.5 0 01-1.5 1.5h-5.75a.75.75 0 01-.75-.75V14h-2v6.25a.75.75 0 01-.75.75H4.5A1.5 1.5 0 013 19.5v-9.403c0-.44.194-.859.53-1.144l7.5-6.363zM12 3.734l-7.5 6.363V19.5h5v-6.25a.75.75 0 01.75-.75h3.5a.75.75 0 01.75.75v6.25h5v-9.403L12 3.734z"
+              ></path></svg
+          ></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">CSS</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >JAVASCRIPT</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">SQL</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >PYTHON</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">PHP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >BOOTSTRAP</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >HOW TO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >W3.CSS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">JAVA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >JQUERY</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">C++</a>
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </nav>
+
+    <div class="container container1">
+      <div class="overflow-auto overflow-y">
+        <h4>Bootstrap 4 Tutorial</h4>
+        <div class="hover">BS4 HOME</div>
+        <div class="hover">BS4 Get Started</div>
+        <div class="hover">BS4 Containers</div>
+        <div class="hover">BS4 Grid Basic</div>
+        <div class="hover">BS4 Typography</div>
+        <div class="hover">BS4 Colors</div>
+        <div class="hover">BS4 Tables</div>
+        <div class="hover">BS4 Images</div>
+        <div class="hover">BS4 Jumbotron</div>
+        <div class="hover">BS4 Alerts</div>
+        <div class="hover">BS4 Buttons</div>
+        <div class="hover">BS4 Button Groups</div>
+        <div class="hover">BS4 Badges</div>
+        <div class="hover">BS4 Progress Bars</div>
+        <div class="hover">BS4 Spinners</div>
+        <div class="hover">BS4 Pagination</div>
+        <div class="hover">BS4 List Groups</div>
+        <div class="hover">BS4 Cards</div>
+        <div class="hover">BS4 Dropdowns</div>
+        <div class="hover">BS4 Collapse</div>
+        <div class="hover">BS4 Navs</div>
+        <div class="hover">BS4 Navbar</div>
+        <div class="hover">BS4 Forms</div>
+        <div class="hover">BS4 Inputs</div>
+        <div class="hover">BS4 Input Groups</div>
+        <div class="hover">BS4 Custom Forms</div>
+        <div class="hover">BS4 Carousel</div>
+        <div class="hover">BS4 Modal</div>
+        <div class="hover">BS4 Tooltip</div>
+        <div class="hover">BS4 Popover</div>
+        <div class="hover">BS4 Toast</div>
+        <div class="hover">BS4 Scrollspy</div>
+        <div class="hover">BS4 Utilities</div>
+        <div class="hover">BS4 Flex</div>
+        <div class="hover">BS4 Icons</div>
+        <div class="hover">BS4 Media Objects</div>
+      </div>
+
+      <div class="main">
+        <div class="top">
+          <h1>Bootstrap 4 Jumbotron</h1>
+          <div class="mbtn">
+            <button type="button" class="btn btn-success">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                width="20"
+                height="20"
+                class="icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.78 12.78a.75.75 0 01-1.06 0L4.47 8.53a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 1.06L6.06 8l3.72 3.72a.75.75 0 010 1.06z"
+                ></path></svg
+              >Previous
+            </button>
+
+            <button type="button" class="btn btn-success">
+              Next<svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 12 12"
+                width="20"
+                height="20"
+                class="icon light"
+              >
+                <path
+                  d="M4.7 10c-.2 0-.4-.1-.5-.2-.3-.3-.3-.8 0-1.1L6.9 6 4.2 3.3c-.3-.3-.3-.8 0-1.1s.8-.3 1.1 0l3.3 3.2c.3.3.3.8 0 1.1L5.3 9.7c-.2.2-.4.3-.6.3z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="mid">
+          <h3>Bootstrap 4 Jumbotron</h3>
+          <p>
+            A jumbotron indicates a big grey box for calling extra attention to
+            some special content or information.
+          </p>
+          <p>
+            <b>Tip:</b> Inside a jumbotron you can put nearly any valid HTML,
+            including other Bootstrap elements/classes.
+          </p>
+        </div>
+
+        <div class="jumbotron">
+          <h1>Bootstrap Tutorial</h1>
+          <p>
+            Bootstrap is the most popular HTML, CSS, and JS framework for
+            developing responsive, mobile-first projects on the web.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
